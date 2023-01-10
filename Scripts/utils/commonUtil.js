@@ -167,7 +167,7 @@
         checkObject: checkObject,
         checkNumber: checkNumber,
         checkString: checkString,
-        checkFunction: checkFunction,
+        checkFunction: checkFunction
     })
 
     return _commonUtil;
