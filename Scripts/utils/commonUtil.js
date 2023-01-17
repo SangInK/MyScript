@@ -1,4 +1,8 @@
-﻿window.commonUtil = (() => {
+﻿/**
+ * 자주 사용하는 기능 function 모음
+ * view를 직접 조작하는 function은 viewUtil에 작업할 것
+ */
+window.commonUtil = (() => {
     //#region 상수. 변수 선언
     const _commonUtil = {
         defaultName: "commonUtil",
@@ -25,7 +29,6 @@
             }
         }
     }
-
 
     //#region Empty Check
     /**
@@ -103,7 +106,6 @@
     }
 
     //#endregion
-
 
     //#region DataType Check
     /**

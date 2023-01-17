@@ -1,4 +1,8 @@
-﻿window.viewUtil = (() => {
+﻿/**
+ * view를 직접 조작하는 function 모음
+ * view를 직접 조작하는 function과, 해당 function에서만 사용하는 지역 function만 작업할 것
+ */
+window.viewUtil = (() => {
     //#region 상수. 변수 선언
     const _viewUtil = {
         defaultName: "viewUtil",

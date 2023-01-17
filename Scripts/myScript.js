@@ -32,6 +32,7 @@
 
     /**
      * myScript객체와 refScript에 새로운 function을 추가
+     * 해당 script객체에 같은 이름의 function이 존재할 경우 덮어씀
      * @param {any} funcs function 또는 function으로 이루어진 객체
      * @param {string} scriptName 새로운 function을 추가할 대상
      */
