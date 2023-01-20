@@ -105,7 +105,22 @@ window.commonUtil = (() => {
         }
     }
 
+    /**
+    * 변수 value가 숫자이고, 0일 경우 true를 return
+    * 변수 value가 숫자가 아닐 경우 false를 return
+     * @param {any} value
+     */
+    const checkDateEmpty = (value) => {
+        if (checkDate(value) && !value.valueOf()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     //#endregion
+
 
     //#region DataType Check
     /**
@@ -145,6 +160,19 @@ window.commonUtil = (() => {
     }
 
     /**
+     * 변수 value가 Date이면 true를 return
+     * @param {any} value
+     */
+    const checkDate = (value) => {
+        if ("object" == typeof value && value instanceof Date) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
      * 변수 value가 함수이면 true를 return
      * @param {any} value
      */
@@ -164,11 +192,13 @@ window.commonUtil = (() => {
         checkJQueryEmpty: checkJQueryEmpty,
         checkObjectEmpty: checkObjectEmpty,
         checkStringEmpty: checkStringEmpty,
+        checkDateEmpty: checkDateEmpty,
         checkNumberZero: checkNumberZero,
         checkJQuery: checkJQuery,
         checkObject: checkObject,
         checkNumber: checkNumber,
         checkString: checkString,
+        checkDate: checkDate,
         checkFunction: checkFunction
     })
 

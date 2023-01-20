@@ -25,7 +25,9 @@ namespace MyScript
             bundles.Add(new ScriptBundle("~/bundles/myScript")
                     .Include("~/Scripts/myScript.js")
                     .Include("~/Scripts/utils/commonUtil.js")
-                    .Include("~/Scripts/utils/viewUtil.js"));
+                    .Include("~/Scripts/utils/viewUtil.js")
+                    .Include("~/Scripts/proto/stringProto.js")
+                    .Include("~/Scripts/proto/dateProto.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

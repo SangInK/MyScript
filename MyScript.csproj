@@ -149,6 +149,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\myScript.js" />
+    <Content Include="Scripts\proto\dateProto.js" />
+    <Content Include="Scripts\proto\stringProto.js" />
     <Content Include="Scripts\utils\commonUtil.js" />
     <Content Include="Scripts\utils\viewUtil.js" />
     <Content Include="Scripts\_Layout.js" />
