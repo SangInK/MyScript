@@ -106,8 +106,7 @@ window.commonUtil = (() => {
     }
 
     /**
-    * 변수 value가 숫자이고, 0일 경우 true를 return
-    * 변수 value가 숫자가 아닐 경우 false를 return
+     * 변수 value가 Date이고 빈 값이 아니면 true를 return
      * @param {any} value
      */
     const checkDateEmpty = (value) => {
