@@ -1,7 +1,7 @@
 ﻿(function (window) {
     //#region 상수. 변수 선언
     const _myScript = {};
-    const refScript = ["commonUtil", "viewUtil", "viewUtil2"];
+    const refScript = ["commonUtil", "viewUtil", "eventBindUtil"];
 
     //#endregion
 

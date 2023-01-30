@@ -152,6 +152,7 @@
     <Content Include="Scripts\proto\dateProto.js" />
     <Content Include="Scripts\proto\stringProto.js" />
     <Content Include="Scripts\utils\commonUtil.js" />
+    <Content Include="Scripts\utils\eventBindUtil.js" />
     <Content Include="Scripts\utils\viewUtil.js" />
     <Content Include="Scripts\_Layout.js" />
     <Content Include="Web.config" />

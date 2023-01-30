@@ -1,14 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 내 ASP.NET 애플리케이션</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/myScript")
+    @RenderSection("scripts", required: false)
 </head>
-<body>
+<body style="height: 100vh; width: 100vw; display:flex; flex-direction: column">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -28,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div id="test2" style="display:flex; flex: 1 1 auto; flex-direction:column;">
         @RenderBody()
         <hr />
         <footer>
@@ -36,9 +41,5 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/myScript")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
